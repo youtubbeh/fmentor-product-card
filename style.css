@@ -26,16 +26,20 @@ main {
 
 .text {
     padding: 30px;
+    box-sizing: border-box;
+    height: auto;
 }
 
-h1, p {
+h1 {
     color: hsl(212, 21%, 14%);
+    font-size: 32px;
 }
 
 .category {
     text-transform: uppercase;
     letter-spacing: 0.5em;
     font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
 }
 
 h1 {
@@ -43,20 +47,52 @@ h1 {
     color:hsl(212, 21%, 14%);
 }
 
-p {
+.description {
     color:hsl(212, 21%, 14%);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    line-height: 1.5em;
+}
+
+.price {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.big {
+    color:hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    margin: 0;
+}
+
+.small {
+    color:hsl(212, 21%, 14%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-decoration: line-through;
 }
 
 button {
     background-color: hsl(158, 36%, 37%);
     font-family: 'Montserrat', sans-serif;
     color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    border: none;
 }
 
 .attribution {
-    margin: 0 auto;
+    margin: 10px auto;
+    font-family: 'Montserrat', sans-serif;
     font-size: 11px; text-align: center;
 }
 
